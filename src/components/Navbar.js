@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-zinc-700 sticky top-0">
+      <nav className=" flex fixed bg-neutral-900 top-0 right-0 left-0">
         <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -168,7 +168,7 @@ export default function Navbar() {
           leaveFrom="translate-x-0 opacity-100"
           leaveTo="-translate-x-full opacity-0"
         >
-          <div className="md:hidden" id="mobile-menu">
+          <div className="md:hidden mt-10" id="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
               <button
                 tabIndex={0}

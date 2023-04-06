@@ -47,10 +47,10 @@ export default function Skills()  {
   ];
 
   return (
-    <div id='skills' className="flex flex-col items-center justify-center bg-neutral-900 py-20">
+    <div className="flex flex-col items-center justify-center bg-neutral-900 py-10">
         <MdComputer className="text-white text-4xl mb-4" />
-      <h2 className="text-white text-2xl font-bold mb-4">Skills</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <h2 id='skills' className="text-white text-2xl font-bold mb-4 scroll-mt-345">Skills</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
         {skills.map((skill, index) => (
           <div
             key={index}
