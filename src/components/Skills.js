@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import {
   SiReact,
   SiRedux,
@@ -63,10 +61,6 @@ export default function Skills() {
       id="skills"
       className="flex flex-col items-center justify-center bg-neutral-900 py-20"
     >
-      <FontAwesomeIcon
-        icon={faLaptopCode}
-        className="text-white text-4xl mb-4"
-      />
       <h2 className="text-white text-2xl font-bold mb-4">Skills</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {skills.map((skill, index) => (
