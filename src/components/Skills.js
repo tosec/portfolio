@@ -1,18 +1,8 @@
 import React from "react";
-import {
-  SiReact,
-  SiRedux,
-  SiHtml5,
-  SiCss3,
-  SiPostgresql,
-  SiFirebase,
-  SiNodedotjs,
-  SiJavascript,
-  SiExpress,
-  SiMui,
-} from "react-icons/si";
+import { SiReact, SiRedux, SiHtml5, SiCss3, SiPostgresql, SiFirebase, SiNodedotjs, SiJavascript, SiExpress, SiMui,  } from 'react-icons/si';
+import { MdComputer } from "react-icons/md";
 
-export default function Skills() {
+export default function Skills()  {
   const skills = [
     {
       name: "JavaScript",
@@ -35,8 +25,8 @@ export default function Skills() {
       icon: <SiCss3 />,
     },
     {
-      name: "MUI",
-      icon: <SiMui />,
+        name: 'MUI',
+        icon: <SiMui/>
     },
     {
       name: "PostgreSQL",
@@ -57,10 +47,8 @@ export default function Skills() {
   ];
 
   return (
-    <div
-      id="skills"
-      className="flex flex-col items-center justify-center bg-neutral-900 py-20"
-    >
+    <div id='skills' className="flex flex-col items-center justify-center bg-neutral-900 py-20">
+        <MdComputer className="text-white text-4xl mb-4" />
       <h2 className="text-white text-2xl font-bold mb-4">Skills</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {skills.map((skill, index) => (
@@ -75,4 +63,5 @@ export default function Skills() {
       </div>
     </div>
   );
-}
+};
+
