@@ -63,12 +63,12 @@ export default function Skills() {
       className="flex flex-col items-center justify-center bg-neutral-900 py-20 scroll-mt-110"
     >
       <MdComputer className="text-white text-4xl mb-4" />
-      <h2 className="text-white text-3xl font-bold mb-4 ">Skills</h2>
+      <h2 className="text-white text-3xl font-bold mb-8 font-medium">Skills</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-gray-700 p-4 rounded-md flex items-center justify-center"
+            className="bg-zinc-700 p-4 rounded-md flex items-center justify-center"
           >
             {skill.icon}
             <span className="ml-2 text-white">{skill.name}</span>
