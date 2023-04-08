@@ -110,7 +110,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div id="#top" className="fixed -mr-2 flex flex md:hidden">
+            <div id="#top" className="-mr-2 flex flex md:hidden fixed">
               <button
                 onClick={() => {
                   setIsOpen(!isOpen);

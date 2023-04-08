@@ -2,11 +2,17 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className='mt-10'>
+    <section id="about" className="mt-10">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 id='#about'className="title-font md:text-5xl text-3xl mb-4 font-medium text-white">
-            Hi, I am <span className="animate-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">Stephen</span>
+          <h1
+            id="#about"
+            className="title-font md:text-5xl text-3xl mb-4 font-medium text-white"
+          >
+            Hi, I am{" "}
+            <span className="animate-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
+              Stephen
+            </span>
             <br className="hidden lg:inline-block" />
           </h1>
           <h2 className="title-font md:text-5xl text-3xl mb-4 font-medium text-gray-400">
@@ -39,8 +45,8 @@ export default function About() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
             className=""
-            alt="image of me"   // getting a drawing done to be displayed here
-            src=""
+            alt="image of me" // getting a drawing done to be displayed here
+            src={require("./images/portfolioimg.png")}
           />
         </div>
       </div>
