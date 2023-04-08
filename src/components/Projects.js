@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="text-gray-400 bg-zinc-700 body-font scroll-mt-"
+      className="text-gray-400 bg-zinc-700 body-font scroll-mt-10"
     >
       <div className="container px-5 py-6 mx-auto text-center lg:px-40 mt-10">
         <div className="flex flex-col w-full mb-20">
@@ -61,12 +61,12 @@ export default function Projects() {
               className="sm:w-1/2 w-full p-4"
             >
               <div className="flex">
-                <div className="py-10 w-full bg-neutral-900 rounded-md hover:bg-gray-600 active:bg-gray-600 focus:outline-none focus:ring focus:bg-gray-600 ease-out duration-500">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-gray-500 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                <div className="py-10 w-full bg-neutral-900 rounded-md hover:bg-neutral-800 active:bg-neutral-800 focus:outline-none focus:ring focus:bg-neutral-800 ease-out duration-500">
+                  <h2 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
+                  </h2>
+                  <h1 className="tracking-widest text-md title-font font-medium mb-1">
+                    {project.subtitle}
                   </h1>
                   <p className="leading-relaxed text-gray-500">
                     {project.description}

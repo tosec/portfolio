@@ -1,112 +1,79 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <nav className=" flex fixed bg-neutral-900 top-0 right-0 left-0">
-        <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+      <nav className="flex fixed bg-neutral-900 top-0 right-0 left-0">
+        <div className="max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+          <div className="flex items-center">
             <div className="flex items-center">
-              <div className="flex-shrink-0"></div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <button
-                    tabIndex={0}
-                    onClick={() => {
-                      document
-                        .getElementById("about")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
+              <div className="flex-shrink-0">
+                <div className="hidden md:block">
+                  <div className="ml-10 flex items-baseline space-x-4">
+                    <button
+                      tabIndex={0}
+                      onClick={() => {
                         document
                           .getElementById("about")
                           .scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                    className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
-                  >
-                    About
-                  </button>
+                      }}
+                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+                    >
+                      About
+                    </button>
 
-                  <button
-                    tabIndex={0}
-                    onClick={() => {
-                      document
-                        .getElementById("skills")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
+                    <button
+                      tabIndex={0}
+                      onClick={() => {
                         document
                           .getElementById("skills")
                           .scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                    className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
-                  >
-                    Skills
-                  </button>
+                      }}
+                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+                    >
+                      Skills
+                    </button>
 
-                  <button
-                    tabIndex={0}
-                    onClick={() => {
-                      document
-                        .getElementById("projects")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
+                    <button
+                      tabIndex={0}
+                      onClick={() => {
                         document
                           .getElementById("projects")
                           .scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                    className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
-                  >
-                    Projects
-                  </button>
+                      }}
+                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+                    >
+                      Projects
+                    </button>
 
-                  <button
-                    tabIndex={0}
-                    onClick={() => {
-                      document
-                        .getElementById("resume")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
+                    <button
+                      tabIndex={0}
+                      onClick={() => {
                         document
                           .getElementById("resume")
                           .scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                    className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
-                  >
-                    Resume
-                  </button>
+                      }}
+                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+                    >
+                      Resume
+                    </button>
 
-                  <button
-                    tabIndex={0}
-                    onClick={() => {
-                      document
-                        .getElementById("contact")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
+                    <button
+                      tabIndex={0}
+                      onClick={() => {
                         document
                           .getElementById("contact")
                           .scrollIntoView({ behavior: "smooth" });
-                      }
-                    }}
-                    className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
-                  >
-                    Contact
-                  </button>
+                      }}
+                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+                    >
+                      Contact
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,6 +239,14 @@ export default function Navbar() {
             </div>
           </div>
         </Transition>
+        <div className="flex justify-end items-center ml-auto">
+          <a href="https://github.com/tosec">
+            <SiGithub className="text-gray-300 hover:text-white w-6 h-6" />
+          </a>
+          <a href="https://www.linkedin.com/in/stephenvallejoiii/">
+            <SiLinkedin className="text-gray-300 hover:text-white w-6 h-6 m-4" />
+          </a>
+        </div>
       </nav>
     </div>
   );
