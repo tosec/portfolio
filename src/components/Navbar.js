@@ -8,13 +8,16 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="flex fixed bg-neutral-900 top-0 right-0 left-0">
+      <nav
+        className="flex fixed bg-neutral-900 top-0 right-0 left-0"
+        style={{ zIndex: 10 }}
+      >
         <div className="max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <div className="hidden md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
+                  <div className="flex items-baseline space-x-4">
                     <button
                       tabIndex={0}
                       onClick={() => {
@@ -51,13 +54,6 @@ export default function Navbar() {
                       Projects
                     </button>
 
-                    <Link
-                      to="/resume"
-                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
-                    >
-                      Resume
-                    </Link>
-
                     <button
                       tabIndex={0}
                       onClick={() => {
@@ -69,6 +65,13 @@ export default function Navbar() {
                     >
                       Contact
                     </button>
+
+                    <Link
+                      to="/resume"
+                      className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+                    >
+                      Resume
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -141,14 +144,6 @@ export default function Navbar() {
                     .getElementById("about")
                     .scrollIntoView({ behavior: "smooth" });
                 }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    setIsOpen(!isOpen);
-                    document
-                      .getElementById("about")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
                 className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white text-left"
               >
                 About
@@ -161,13 +156,6 @@ export default function Navbar() {
                   document
                     .getElementById("skills")
                     .scrollIntoView({ behavior: "smooth" });
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    document
-                      .getElementById("skills")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }
                 }}
                 className="text-gray-300 px-3 py-2 rounded-md text-lg text-left font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
               >
@@ -182,51 +170,25 @@ export default function Navbar() {
                     .getElementById("projects")
                     .scrollIntoView({ behavior: "smooth" });
                 }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    setIsOpen(!isOpen);
-                    document
-                      .getElementById("projects")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
                 className="text-gray-300 px-3 py-2 rounded-md text-lg text-left font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
               >
                 Projects
               </button>
 
-              <button
-                tabIndex={0}
-                onClick={() => {
-                  document
-                    .getElementById("resume")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    document
-                      .getElementById("resume")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-                className="text-gray-300 px-3 py-2 rounded-md text-lg text-left font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
+              <Link
+                to="/resume"
+                className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
               >
                 Resume
-              </button>
+              </Link>
 
               <button
                 tabIndex={0}
                 onClick={() => {
+                  setIsOpen(!isOpen);
                   document
                     .getElementById("contact")
                     .scrollIntoView({ behavior: "smooth" });
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    document
-                      .getElementById("contact")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }
                 }}
                 className="text-gray-300 px-3 py-2 rounded-md text-lg text-left font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
               >
@@ -237,10 +199,10 @@ export default function Navbar() {
         </Transition>
         <div className="flex justify-end items-center ml-auto">
           <a href="https://github.com/tosec">
-            <SiGithub className="text-gray-300 hover:text-white w-6 h-6" />
+            <SiGithub className="text-gray-300 hover:text-white w-6 h-6 mr-6" />
           </a>
           <a href="https://www.linkedin.com/in/stephenvallejoiii/">
-            <SiLinkedin className="text-gray-300 hover:text-white w-6 h-6 m-4" />
+            <SiLinkedin className="text-gray-300 hover:text-white w-6 h-6 mr-6" />
           </a>
         </div>
       </nav>

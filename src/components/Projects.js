@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="text-gray-400 bg-zinc-700 body-font scroll-mt-10"
+      className="text-gray-400 bg-zinc-700 body-font scroll-mt-14"
     >
       <div className="container px-5 py-6 mx-auto text-center lg:px-40 mt-10">
         <div className="flex flex-col w-full mb-20">
@@ -53,7 +53,7 @@ export default function Projects() {
             platforms.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 mb-20">
           {projects.map((project) => (
             <a
               href={project.link}

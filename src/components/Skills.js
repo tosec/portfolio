@@ -60,10 +60,16 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="flex flex-col items-center justify-center bg-neutral-900 py-44 md:scroll-mt-196"
+      className="flex flex-col items-center justify-center bg-neutral-900 py-20 md:scroll-mt-210"
     >
       <MdComputer className="text-white text-4xl mb-4" />
-      <h2 className="text-white text-3xl font-bold mb-8 font-medium">Skills</h2>
+      <h2 className="text-white text-3xl font-bold mb-8 font-medium">
+        My Skills
+      </h2>
+      <p className="flex justify-center lg:w-1/4 mx-auto leading-relaxed text-base md:text-2xl mb-10 text-center">
+        Frame works and languages ive acquired proficiency in throughout my
+        journey.{" "}
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
         {skills.map((skill, index) => (
           <div
