@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,17 +51,12 @@ export default function Navbar() {
                       Projects
                     </button>
 
-                    <button
-                      tabIndex={0}
-                      onClick={() => {
-                        document
-                          .getElementById("resume")
-                          .scrollIntoView({ behavior: "smooth" });
-                      }}
+                    <Link
+                      to="/resume"
                       className="text-gray-300 px-3 py-2 rounded-md text-lg font-medium focus:text-white focus:underline decoration-2 underline-offset-4 underline-thickness-4"
                     >
                       Resume
-                    </button>
+                    </Link>
 
                     <button
                       tabIndex={0}

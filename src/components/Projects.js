@@ -7,7 +7,7 @@ export default function Projects() {
       title: "Social Web App",
       subtitle: "Feb-April 2023",
       description: "Social platform built with React/MaterialUI and Firebase",
-      image: `${require("./images/socialwebapp.png")}`,
+      image: `${require("../images/socialwebapp.png")}`,
       link: "https://social-ebaa0.web.app/",
     },
     {
@@ -61,7 +61,7 @@ export default function Projects() {
               className="sm:w-1/2 w-full p-4"
             >
               <div className="flex">
-                <div className="py-10 w-full bg-neutral-900 rounded-md hover:bg-neutral-800 active:bg-neutral-800 focus:outline-none focus:ring focus:bg-neutral-800 ease-out duration-500">
+                <div className="py-10 px-4 w-full bg-neutral-900 rounded-md hover:bg-neutral-800 active:bg-neutral-800 focus:outline-none focus:ring focus:bg-neutral-800 ease-out duration-500">
                   <h2 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h2>

@@ -1,16 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Skills from "./components/Skills"
-import Projects from "./components/Projects";
+import { Routes, Route } from "react-router";
+import Resume from "./components/Resume";
+import Main from "./components/Main";
 
 export default function App() {
   return (
     <main className="min-h-screen text-gray-400 bg-zinc-700 body-font">
-      <Navbar />
-      <About />
-      <Skills />
-      <Projects />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="resume" element={<Resume />} />
+      </Routes>
     </main>
   );
 }

@@ -60,7 +60,7 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="flex flex-col items-center justify-center bg-neutral-900 py-20 scroll-mt-110"
+      className="flex flex-col items-center justify-center bg-neutral-900 py-44 md:scroll-mt-196"
     >
       <MdComputer className="text-white text-4xl mb-4" />
       <h2 className="text-white text-3xl font-bold mb-8 font-medium">Skills</h2>
