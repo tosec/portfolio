@@ -63,7 +63,7 @@ export default function Skills() {
       className="flex flex-col items-center justify-center bg-neutral-900 py-20 md:scroll-mt-210"
     >
       <MdComputer className="text-white text-4xl mb-4" />
-      <h2 className="text-white text-3xl font-bold mb-8 font-medium">
+      <h2 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
         My Skills
       </h2>
       <p className="flex justify-center lg:w-1/4 mx-auto leading-relaxed text-base md:text-2xl mb-10 text-center">
