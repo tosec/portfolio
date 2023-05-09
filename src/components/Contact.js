@@ -8,6 +8,16 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const nameInput = form.current.querySelector("#user_name");
+    const emailInput = form.current.querySelector("#user_email");
+    const messageInput = form.current.querySelector("#message");
+
+    // validate
+    if (!nameInput.value || !emailInput.value || !messageInput.value) {
+      setIsSuccess(false)
+      return;
+    }
+
     emailjs
       .sendForm(
         "service_jwk675h",
@@ -16,9 +26,7 @@ export default function Contact() {
         "7CDIdZBP0uiUS7pQk"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
+        () => {
           setIsSuccess(true);
           form.current.reset(); // reset the form fields
           setTimeout(() => {
@@ -34,23 +42,20 @@ export default function Contact() {
   return (
     <section id="contact" className="bg-neutral-900 py-8 scroll-mt-10">
       {isSuccess && (
-        <div
-          className="fixed top-20 right-10 w-500 z-50 bg-violet-300 text-white p-4 text-center rounded-md"
-          role="alert"
-        >
-          <strong className="font-bold">Success!</strong>
-          <span className="block sm:inline">Your message has been sent.</span>
+        <div className="fixed top-20 right-10 w-500 z-50 bg-green-500 text-white p-4 text-center rounded-md animate-bounce">
+          <strong className="font-bold text-lg">Success!</strong>
+          <span className="block sm:inline text-md">
+            {" "}
+            Your message has been sent.
+          </span>
           <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
             <svg
               onClick={() => setIsSuccess(false)}
-              className="fill-current h-6 w-6 text-green-500"
+              className="fill-current h-6 w-12 text-white hover:text-gray-500 transition duration-300"
               role="button"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-            >
-              <title>Close</title>
-              <path d="M14.348 5.652a.999.999 0 1 0-1.414 1.414L11 7.414l-1.934 1.934a.999.999 0 1 0 1.414 1.414L12.414 9l1.934 1.934a.999.999 0 1 0 1.414-1.414L13.828 7.586l1.52-1.52z" />
-            </svg>
+            ></svg>
           </span>
         </div>
       )}
