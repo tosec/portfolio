@@ -1,31 +1,18 @@
-# Create React App
+# My Portfolio
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+The following frameworks and libraries that were used to build this project:
 
-## Deploy Your Own
+- React
+- Tailwind CSS
 
-Deploy your own Create React App project with Vercel.
+## Getting Started
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+To view the website, simply clone the repository, install the dependencies, and run the dev server locally.
 
-_Live Example: https://create-react-template.vercel.app/_
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd portfolio
+npm install
+npm run start
+```
+or you can check out the live version [here](https://www.tosec.site/).
