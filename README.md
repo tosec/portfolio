@@ -10,7 +10,7 @@ The following frameworks and libraries that were used to build this project:
 To view the website, simply clone the repository, install the dependencies, and run the dev server locally.
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/tosec/portfolio.git
 cd portfolio
 npm install
 npm run start
