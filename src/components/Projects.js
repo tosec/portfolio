@@ -16,20 +16,20 @@ export default function Projects() {
       description: "E-commerce web app built with PERN-Stack and MaterialUI",
       image:
         "https://i.kym-cdn.com/entries/icons/original/000/038/339/inabakumori_-_Lagtrain_(Vo._Kaai_Yuki)___%E7%A8%B2%E8%91%89%E6%9B%87%E3%80%8E%E3%83%A9%E3%82%B0%E3%83%88%E3%83%AC%E3%82%A4%E3%83%B3%E3%80%8FVo._%E6%AD%8C%E6%84%9B%E3%83%A6%E3%82%AD_0-0_screenshot.png",
-      link: "#",
+      link: "https://github.com/greatgonzo-FSA/GS-GGonzo.git",
     },
     {
-      title: "Project 3",
-      subtitle: "Subtitle 3",
-      description: "Description 3",
+      title: "Coming Soon..",
+      subtitle: "Coming Soon..",
+      description: "Coming Soon..",
       image:
         "https://i.kym-cdn.com/entries/icons/original/000/038/339/inabakumori_-_Lagtrain_(Vo._Kaai_Yuki)___%E7%A8%B2%E8%91%89%E6%9B%87%E3%80%8E%E3%83%A9%E3%82%B0%E3%83%88%E3%83%AC%E3%82%A4%E3%83%B3%E3%80%8FVo._%E6%AD%8C%E6%84%9B%E3%83%A6%E3%82%AD_0-0_screenshot.png",
       link: "#",
     },
     {
-      title: "Project 3",
-      subtitle: "Subtitle 3",
-      description: "Description 3",
+      title: "Coming Soon..",
+      subtitle: "Coming Soon..",
+      description: "Coming Soon..",
       image:
         "https://i.kym-cdn.com/entries/icons/original/000/038/339/inabakumori_-_Lagtrain_(Vo._Kaai_Yuki)___%E7%A8%B2%E8%91%89%E6%9B%87%E3%80%8E%E3%83%A9%E3%82%B0%E3%83%88%E3%83%AC%E3%82%A4%E3%83%B3%E3%80%8FVo._%E6%AD%8C%E6%84%9B%E3%83%A6%E3%82%AD_0-0_screenshot.png",
       link: "#",
